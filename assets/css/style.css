@@ -10301,9 +10301,6 @@ header{
 }
 
 
-
-
-
 #absolute-1,#absolute-2{
   position: absolute;
 }
@@ -10315,6 +10312,6 @@ header{
 }
 
 #absolute-2{
-  left: 85%;
+  left: 90%;
   top: 20%;
 }

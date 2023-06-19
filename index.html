@@ -152,14 +152,41 @@
         <header class="header-creative">
             <div class="container ontop">
                 <div class="row justify-content-center full-height">
-                    <div class="col-lg-3 d-flex align-items-end">
+                    <!-- <div class="col-lg-3 d-flex align-items-end">
                         <div class="img md-hide">
                             <div class="img-assets1 parallax" data-speed="-0.01">
                                 <img src="assets/imgs/svg-assets/claw.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 valign">
+                    </div> -->
+                    <div class="col valign" style="position: relative;">
+                        <div class="img md-hide"  id="absolute-1">
+                            <div class="img-assets1 parallax" data-speed="-0.01" >
+                                <img src="assets/imgs/svg-assets/claw.svg" alt="">
+                            </div>
+                        </div>
+                            <div class="mt-30 md-hide"   id="absolute-2">
+                                <div class="text-center hover-this">
+                                  <div class="circle-button hover-anim">
+                                    <div class="rotate-circle fz-30 text-u">
+                                      <svg class="textcircle" viewBox="0 0 500 500">
+                                        <defs>
+                                          <path
+                                            id="textcircle1"
+                                            d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                                          ></path>
+                                        </defs>
+                                        <text>
+                                          <textPath xlink:href="#textcircle1" textLength="900">
+                                            Creative - Agency - Studio -
+                                          </textPath>
+                                        </text>
+                                      </svg>
+                                    </div>
+                                    <div class="in-circle text-center"></div>
+                                  </div>
+                                </div>
+                              </div>
                         <div class="caption text-center full-width md-mb50">
                             <!-- <div class="mb-30">
                                 <svg class="svg-animation star" width="100" height="100" viewBox="0 0 100 100"
@@ -180,8 +207,7 @@
                             </div> -->
                             <!-- <h4 class="fw-300 mb-15">Digital agency studio</h4> -->
                             <h1 class="fw-600 d-rotate wow">
-                                <span class="rotate-text" style="background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent; font-size: 95px;">We Create Awesome Stuff.</span>
+                                <span class="rotate-text" id="hero-text">We Create <br>Awesome Stuff.</span>
                                 <!-- <span class="rotate-text" style="background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent; font-size: 95px;">Awesome Stuff</span> -->
                 </h1>
