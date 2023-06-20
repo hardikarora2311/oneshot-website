@@ -10391,6 +10391,12 @@ background-position: 0 0,40px 40px; */
   }
 }
 
+@media screen and (min-width: 769px){
+  #footer-contact{
+    overflow: visible;
+  }
+}
+
 .header-creative .svg-animation {
   height: 100px;
   width: 100px;
