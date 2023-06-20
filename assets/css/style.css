@@ -13,6 +13,7 @@
 -----------------------------------------------------------------*/
 /* Typography
 -----------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -289,7 +290,7 @@ figure {
 }
 
 .main-bg {
-  /* background-color: #1d1d1d; */
+  background-color: black;
 }
 
 .sub-bg {
@@ -1586,7 +1587,7 @@ img.left {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .flex {
@@ -4129,8 +4130,8 @@ body.loaded {
 }
 
 .about .about-circle-crev .rotate-circle {
-  -webkit-animation-duration: 60s;
-  animation-duration: 60s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
 }
 
 .about .about-circle-crev .half-circle-img {
@@ -5886,6 +5887,8 @@ footer .bg-pattern {
 .serv-marq {
   position: relative;
   z-index: 3;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .serv-marq .ontop {
@@ -6198,7 +6201,7 @@ footer .bg-pattern {
 }
 
 .thecontainer {
-  width: 300%;
+  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10264,10 +10267,33 @@ header.in-box {
 }
 
 /* ====================== [ End Responsive ] ====================== */
-header{
+header {
   height: 90vh;
+  /* background-color: #000000;
+opacity: 1;
+background-image:  radial-gradient(#3a3a3a 1.9000000000000001px, transparent 1.9000000000000001px), radial-gradient(#3a3a3a 1.9000000000000001px, #000000 1.9000000000000001px);
+background-size: 76px 76px;
+background-position: 0 0,38px 38px; */
+
+  /* background-color: #000000;
+opacity: 1;
+background-image:  radial-gradient(#222222 2px, transparent 2px), radial-gradient(#222222 2px, #000000 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px; */
+
+  background-color: #000000;
+  opacity: 1;
+  background-image: radial-gradient(#282828 2px, transparent 2px),
+    radial-gradient(#282828 2px, #000000 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 #hero-text {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.1;
+    text-align: center;
+  /* font-size: min(max(2.5rem, 7.5vw), 160px); */
+  
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10279,39 +10305,78 @@ header{
 
 @keyframes textShine {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   100% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .valign {
+    align-items: center;
+  }
+  #hero-text {
+    font-size: 80px;
+  }
+
+  header {
+    height: 100vh;
+  }
+  #absolute-2 {
+    left: 10%;
+    top: 40%;
+  }
+  
+  
+}
+
+#absolute-1,
+#absolute-2 {
+  position: absolute;
+}
+
+#absolute-1 {
+  top: 60%;
+  /* right: 105%; */
+}
+
+#absolute-2 {
+  left: 90%;
+  top: 20%;
 }
 
 
 @media screen and (max-width: 992px){
-  .valign{
-    align-items: center;
-  }
-  #hero-text{
-    font-size: 80px;
+  .about .about-circle-crev .circle-button .rotate-circle svg {
+    width: 300px;
   }
 
-  header{
-    height: 100vh;
+  #showreel-container{
+    padding-right: 0; 
+    padding-left: 15%;
   }
 }
 
-
-#absolute-1,#absolute-2{
-  position: absolute;
+#reverse-row{
+  flex-direction: row-reverse;
 }
 
 
-#absolute-1{
-  top: 60%;
-  right: 105%;
-}
 
-#absolute-2{
-  left: 90%;
-  top: 20%;
+@media screen and (max-width: 768px) {
+  #hero-text {
+    font-size: 65px;
+  }
+  .valign {
+    align-items: flex-start;
+  }
+  header {
+    height: 80vh;
+  }
+  #absolute-2 {
+    margin: 0 !important;
+    left: 45%;
+    top: 50%;
+  }
 }
