@@ -13,7 +13,7 @@
 -----------------------------------------------------------------*/
 /* Typography
 -----------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -271,6 +271,8 @@ figure {
 
 .main-colorbg2 {
   background-color: #f08f74;
+  background-color: #b976ec;
+  background-color: #8090ec;
 }
 
 .main-color3 {
@@ -473,6 +475,7 @@ img {
 
 .butn-circle.colorbg-2:after {
   background: #f08f74;
+  background: #d963b1;
 }
 
 .butn-circle.colorbg-3:after {
@@ -1130,7 +1133,7 @@ img {
 .slide-har.st1 .box {
   position: relative;
   -webkit-animation: slide-har 80s linear infinite;
-  animation: slide-har 80s linear infinite;
+  animation: slide-har 20s linear infinite;
 }
 
 .slide-har.st2 .box {
@@ -3086,7 +3089,7 @@ body.loaded {
   backdrop-filter: blur(3px);
 }
 
-.navbar.nav-scroll {
+/* .navbar.nav-scroll {
   background: #1d1d1d;
   border-color: rgba(255, 255, 255, 0.05);
   padding: 0;
@@ -3100,7 +3103,7 @@ body.loaded {
   -webkit-transform: translateY(80px);
   -ms-transform: translateY(80px);
   transform: translateY(80px);
-}
+} */
 
 .navbar .icon-bar {
   color: #fff;
@@ -3897,6 +3900,7 @@ body.loaded {
   height: 5px;
   border-radius: 50%;
   background: #f08f74;
+  background: #b976ec;
 }
 
 .sec-lg-head .dot-titl:before {
@@ -10289,11 +10293,11 @@ background-position: 0 0,40px 40px; */
   background-position: 0 0, 40px 40px;
 }
 #hero-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.1;
-    text-align: center;
+  text-align: center;
   /* font-size: min(max(2.5rem, 7.5vw), 160px); */
-  
+
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10313,6 +10317,7 @@ background-position: 0 0,40px 40px; */
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
   .valign {
     align-items: center;
   }
@@ -10327,8 +10332,15 @@ background-position: 0 0,40px 40px; */
     left: 10%;
     top: 40%;
   }
-  
-  
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .icon-img-100 {
+    width: 40px;
+  }
+
 }
 
 #absolute-1,
@@ -10346,27 +10358,25 @@ background-position: 0 0,40px 40px; */
   top: 20%;
 }
 
-
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .about .about-circle-crev .circle-button .rotate-circle svg {
     width: 300px;
   }
 
-  #showreel-container{
-    padding-right: 0; 
+  #showreel-container {
+    padding-right: 0;
     padding-left: 15%;
   }
 }
 
-#reverse-row{
+#reverse-row {
   flex-direction: row-reverse;
 }
 
-
-
 @media screen and (max-width: 768px) {
   #hero-text {
-    font-size: 65px;
+    font-size: 50px;
+    line-height: 1.3;
   }
   .valign {
     align-items: flex-start;
@@ -10376,7 +10386,16 @@ background-position: 0 0,40px 40px; */
   }
   #absolute-2 {
     margin: 0 !important;
-    left: 45%;
+    left: 40%;
     top: 50%;
   }
+}
+
+.header-creative .svg-animation {
+  height: 100px;
+  width: 100px;
+}
+
+.icon-img-100 {
+  width: 70px;
 }
